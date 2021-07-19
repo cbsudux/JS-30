@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Variables</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class='container'>
+        <h1 class='header'>Update CSS Variables with <span class='special-text'>JS</span></h1>
+        <div class="sliders">
+            <div class="slider">
+                <label for="spacing">Spacing</label>
+                <input class ="spacing-input" type="range" name="spacing" min='10' max='200' value='10' data-sizing ='px' data-name = 'spacing'  >
+            </div>
+            <div class="blur-input slider">
+                <label for="blur">Blur</label>
+                <input class ="blur-input" type="range" name="blur" min='0' max='25' value='10' data-sizing ='px' data-name = 'blur'>
+            </div>
+            <div class="base-color-input slider">
+                <label for="base">Base Color</label>
+                <input class ="color-input" type="color" name="base" data-name = 'color'>
+            </div>
+        </div>
+        <img class='main-img' src="https://picsum.photos/600/400" alt="">
+
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

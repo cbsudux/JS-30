@@ -1,0 +1,48 @@
+:root {
+    --base: yellow;
+    --spacing: 20px;
+    --blur: 10px;
+}
+
+
+body {
+    display:flex;
+    justify-content: center;
+    min-width: 90vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: rgb(21, 0, 70);
+    color: white;
+}
+
+.header {
+    font-size:3.5rem;
+}
+
+.special-text {
+    color: var(--base);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width : 90%;
+}
+
+.sliders {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slider {
+    margin: 30px;
+    font-size: 2rem;
+}
+
+img {
+    background: var(--base);
+    padding: var(--spacing);
+    filter: blur(var(--blur))
+}
