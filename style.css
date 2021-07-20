@@ -18,9 +18,10 @@ body {
 
 .row-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* align-items: flex-start; */
     width : 100%;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -28,6 +29,7 @@ body {
     background-color: rgb(118, 82, 236);
     min-height: 10rem;
     margin: 10px;
+    margin-bottom: 30px;
     padding: 10px;
     padding-top: 30px;
     text-align: center;
