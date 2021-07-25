@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    background-color: rgb(255, 204, 62);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Box-sizing will save you from 100vh and 90vh scroll issue */
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+form {
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.192);
+}
+
+.city-search-bar {
+    max-width: 30rem;
+    height: 7rem;
+    border-radius: 8px;
+    background-color: rgb(235, 235, 235);
+    border: 8px solid rgb(223, 223, 223);
+    padding: 2rem;
+    caret-color: rgba(0, 0, 0, 0.335);
+
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.335)
+}
+
+input[type=search] {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.335)
+}
+
+input:focus {
+    outline-width: 0;
+    background-color: white;
+}
+
+
+ul.suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+
+ul.suggestions li {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+    ;
+    text-align: center;
+    font-weight: thinner;
+    box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.192);
+    perspective: 10rem;
+
+}
+
+
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+    background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
+}

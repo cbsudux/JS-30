@@ -16,7 +16,7 @@ body {
 }
 
 .panels {
-  background-color: yellow;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
